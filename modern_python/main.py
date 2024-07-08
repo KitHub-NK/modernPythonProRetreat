@@ -12,6 +12,14 @@ from importlib import metadata
 import coloredlogs
 
 
+def count_to_ten() -> None:
+    x = 1
+    while True:
+        if x < 11:
+            print(x)
+            x += 1
+
+
 def config_logger() -> logging.Logger:
     """Set up a named logger with nice formatting
 
